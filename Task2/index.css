@@ -1,0 +1,356 @@
+html, body 
+{
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    width: 600px;
+    background-image: url("https://az616578.vo.msecnd.net/files/2016/07/31/636055831659367167-1875003841_Stage%202.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#anim-container
+{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+#leftContainer
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: -310px;
+    animation: leftMove 6.5s linear;
+    z-index: 50;
+}
+
+#leftContainerBack
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: -310px;
+    animation: leftMoveBack 6.5s linear;
+    animation-delay: 12s;
+    animation-fill-mode: forwards;
+    z-index: 50;
+}
+
+#rightContainer
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    right: -600px;
+    animation: rightMove 5s linear;
+    z-index: 50;
+}
+
+#rightContainerBack
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    right: -600px;
+    animation: rightMoveBack 6.5s linear;
+    animation-delay: 12.5s;
+    animation-fill-mode: forwards;
+    z-index: 50;
+}
+
+#leftCurtain, rightCurtain
+{
+    display: block;
+    width: auto;
+    height: auto;
+    backface-visibility: hidden;
+}
+
+@keyframes leftMove 
+{
+    0%
+    {
+        bottom: 115px;
+        left: -0px;
+    }
+    100%
+    {
+        bottom: 115px;
+        left: -400px;
+    }
+}
+
+@keyframes leftMoveBack
+{
+    0%
+    {
+        bottom: 115px;
+        left: -400px;
+    }
+    100%
+    {
+        bottom: 115px;
+        left: -0px;
+    }
+}
+
+@keyframes rightMove 
+{
+    0%
+    {
+        bottom: 115px;
+        right: -300px;
+    }
+    100%
+    {
+        bottom: 115px;
+        right: -600px;
+    }
+}
+
+@keyframes rightMoveBack
+{
+    0%
+    {
+        bottom: 115px;
+        right: -600px;
+    }
+    100%
+    {
+        bottom: 115px;
+        right: -300px;
+    }
+}
+
+#catContainer
+{
+    position: absolute;
+    bottom: 0px;
+}
+
+#catImage
+{
+    position: absolute;
+    bottom: 300px;
+    width: 80px;
+    left: -100px;
+    animation: catMove 5s  ease-in;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    z-index: 55;
+}
+
+#catText
+{
+    position: absolute;
+    padding: 1,5rem;
+    border-radius: 200px;
+    font-size: 20px;
+    left: 50px;
+    bottom: 450px;
+    color: navajowhite;
+    white-space: nowrap;
+    display: none;
+    z-index: 55;
+}
+
+@keyframes catMove 
+{
+    0%
+    {
+        left: -100px;
+        bottom: 350px;
+    }
+    20%
+    {
+        left: -70px;
+        bottom: 300px;
+    }
+    40%
+    {
+        left: -40px;
+        bottom: 350px;
+    }
+    60%
+    {
+        left: -10px;
+        bottom: 300px;
+    }
+    80%
+    {
+        left: 20px;
+        bottom: 350px;
+    }
+    100%
+    {
+        left: 50px;
+        bottom: 300px;
+    }
+}
+
+#catImage:hover ~ #catText
+{
+    display: block;
+}
+
+#witch
+{
+    position: absolute;
+    bottom: 200px;
+    left: -150px;
+}
+
+#witchImage
+{
+    position: absolute;
+    bottom: 250px;
+    width: 150px;
+    animation: witchMove 4s linear;
+    animation-delay: 9s;
+}
+
+@keyframes witchMove 
+{
+    0%
+    {
+        left: -150px;
+    }
+    50%
+    {
+        left: 400px;
+        bottom: 150px;
+    }
+    100%
+    {
+        left: 800px;
+    }
+} 
+
+#pumpkinContainer
+{
+    position: absolute;
+    bottom: 0px;
+    right: -100px;
+}
+
+.pumpkin
+{
+    position: absolute;
+    bottom: 400px;
+    width: 100px;
+}
+
+#pumpkin1
+{
+    animation: pumpkin1Move 4s linear;
+    animation-delay: 11s;
+}
+
+#pumpkin2
+{
+    animation: pumpkin2Move 4s linear;
+    animation-delay: 12s;
+}
+
+#pumpkin3
+{
+    animation: pumpkin3Move 4s linear;
+    animation-delay: 13s;
+}
+
+#pumpkin4
+{
+    animation: pumpkin4Move 4s linear;
+    animation-delay: 14s;
+}
+
+@keyframes pumpkin1Move
+{
+    100% {transform: rotate(720deg);}
+    from {right: 900px; bottom: 200px;}
+    to {right: -100px; bottom: 800px;}
+}
+
+@keyframes pumpkin2Move
+{
+    100% {transform: rotate(1080deg);}
+    from {right: -100px;}
+    to {right: 900px;}
+}
+
+@keyframes pumpkin3Move
+{
+    100% {transform: rotate(720deg);}
+    from {right: -100px; bottom: 200px;}
+    to {right: 900px; bottom: 900px;}
+}
+
+@keyframes pumpkin4Move
+{
+    100% {transform: rotate(720deg);}
+    from {right: 900px; bottom: 900px;}
+    to {right: -100px; bottom: 200px;}
+}
+
+#text
+{
+    position: absolute;
+    font-size: 48px;
+    padding: 1,5rem;
+    border-radius: 200px;
+    left: 220px;
+    top: -150px;
+    color: navajowhite;
+    white-space: nowrap;
+    z-index: 55;
+    
+    animation: textMove 4s linear;
+    animation-delay: 14.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes textMove 
+{
+    0%
+    {
+        left: 220px;
+        top: -150px;
+    }
+    100%
+    {
+        left: 220px;
+        top: 100px;
+    }
+}
+
+#batContainer
+{
+    position: absolute;
+    top: -80px;
+    right: 170px;
+    z-index: 30;
+}
+
+#bat
+{
+    position: absolute;
+    z-index: 30;
+    top: 100px;
+    width: 150px;
+    transition: width 2s ease-in-out;
+}
+
+#bat:hover
+{
+    width: 200px;
+}
