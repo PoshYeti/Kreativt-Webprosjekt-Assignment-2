@@ -1,0 +1,279 @@
+html, body 
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#animContainer 
+{
+    position: relative;
+    width: 8000px;
+    height: 459px;
+    background-image: url("http://media.istockphoto.com/vectors/cartoon-seamless-forest-vector-background-for-smartphone-app-and-vector-id609054044?k=6&m=609054044&s=612x612&w=0&h=RLdgYY1DjVjPPvySjCeCXJsR21wrJNx300dlpLS9AFI=");
+    bottom: 0;
+    overflow: hidden;
+}
+
+#backgroundTint
+{
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    z-index: 25;
+}
+
+#topText
+{
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    color: navajowhite;
+    z-index: 60;
+}
+
+#witch
+{
+    position: fixed;
+    top: 200px;
+    left: 100px;
+    width: 150px;
+    z-index: 45;
+}
+
+#ghostContainer
+{
+    position: absolute;
+    left: 10px;
+    top: 150px;
+    width: 20px;
+    height: 20px;
+    opacity: .4;
+    z-index: 50;
+}
+
+#ghost
+{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    transition: all 20s ease-in-out;
+    transition-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+#ghost:hover
+{
+    transform: translate(7400px, 0px);
+}
+
+#catContainer
+{
+    position: absolute;
+    left: 7380px;
+    bottom: 20px;
+    width: 500px;
+    height: 200px;
+    z-index: 50;
+}
+
+#cat
+{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+}
+
+#catText
+{
+    position: absolute;
+    background-color: darkslategray;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: 100px;
+    right: 150px;
+    bottom: 200px;
+    display: none;
+    white-space: nowrap;
+}
+
+#cat:hover ~ #catText
+{
+    display: block;
+}
+
+#house
+{
+    position: absolute;
+    bottom: 10px;
+    height: 800px;
+    left: 7300px;
+}
+
+.lampFront
+{
+    position: absolute;
+    bottom: 0px;
+    height: 150px;
+    z-index: 50;
+}
+
+.lampFront_1
+{
+    left: 50px;
+}
+
+.lampFront_2
+{
+    left: 500px;
+}
+
+.lampFront_3
+{
+    left: 1000px;
+}
+
+.lampFront_4
+{
+    left: 1500px;
+}
+
+.lampFront_5
+{
+    left: 2000px;
+}
+
+.lampFront_6
+{
+    left: 2500px;
+}
+
+.lampFront_7
+{
+    left: 3000px;
+}
+
+.lampFront_8
+{
+    left: 3500px;
+}
+
+.lampFront_9
+{
+    left: 4000px;
+}
+
+.lampFront_10
+{
+    left: 4500px;
+}
+
+.lampFront_11
+{
+    left: 5000px;
+}
+
+.lampFront_12
+{
+    left: 5500px;
+}
+
+.lampFront_13
+{
+    left: 6000px;
+}
+
+.lampFront_14
+{
+    left: 6500px;
+}
+
+.lampFront_15
+{
+    left: 7000px;
+}
+
+.lampBack
+{
+    position: absolute;
+    bottom: 40px;
+    height: 130px;
+    z-index: 25;
+}
+
+.lampBack_1
+{
+    left: 25px;
+}
+
+.lampBack_2
+{
+    left: 475px;
+}
+
+.lampBack_3
+{
+    left: 975px;
+}
+
+.lampBack_4
+{
+    left: 1475px;
+}
+
+.lampBack_5
+{
+    left: 1975px;
+}
+
+.lampBack_6
+{
+    left: 2475px;
+}
+
+.lampBack_7
+{
+    left: 2975px;
+}
+
+.lampBack_8
+{
+    left: 3475px;
+}
+
+.lampBack_9
+{
+    left: 3975px;
+}
+
+.lampBack_10
+{
+    left: 4475px;
+}
+
+.lampBack_11
+{
+    left: 4975px;
+}
+
+.lampBack_12
+{
+    left: 5475px;
+}
+
+.lampBack_13
+{
+    left: 5975px;
+}
+
+.lampBack_14
+{
+    left: 6475px;
+}
+
+.lampBack_15
+{
+    left: 6975px;
+}
+
+
