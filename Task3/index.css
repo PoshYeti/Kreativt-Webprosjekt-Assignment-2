@@ -11,13 +11,20 @@ html, body
     width: 8000px;
     height: 459px;
     background-image: url("http://media.istockphoto.com/vectors/cartoon-seamless-forest-vector-background-for-smartphone-app-and-vector-id609054044?k=6&m=609054044&s=612x612&w=0&h=RLdgYY1DjVjPPvySjCeCXJsR21wrJNx300dlpLS9AFI=");
-    bottom: 0;
     overflow: hidden;
 }
 
+#animContainer, #ghost, #cat, #house, .lampFront
+{bottom: 0;}
+
+#backgroundTint, #topText, #witch
+{position: fixed;}
+
+#ghostContainer, #ghost, #catContainer, #cat, #catText, #batContainer, #house, .bat, .lampFront, .lampBack
+{position: absolute;}
+
 #backgroundTint
 {
-    position: fixed;
     height: 100%;
     overflow: hidden;
     z-index: 25;
@@ -25,7 +32,6 @@ html, body
 
 #topText
 {
-    position: fixed;
     top: 0px;
     left: 10px;
     color: navajowhite;
@@ -34,7 +40,6 @@ html, body
 
 #witch
 {
-    position: fixed;
     top: 200px;
     left: 100px;
     width: 150px;
@@ -43,7 +48,6 @@ html, body
 
 #ghostContainer
 {
-    position: absolute;
     left: 10px;
     top: 150px;
     width: 20px;
@@ -54,22 +58,17 @@ html, body
 
 #ghost
 {
-    position: absolute;
-    bottom: 0;
     height: 100px;
-    transition: all 20s ease-in-out;
+    transition: all 25s ease-in-out;
     transition-delay: .5s;
     animation-fill-mode: forwards;
 }
 
 #ghost:hover
-{
-    transform: translate(7400px, 0px);
-}
+{transform: translate(7400px, 0px);}
 
 #catContainer
 {
-    position: absolute;
     left: 7380px;
     bottom: 20px;
     width: 500px;
@@ -78,15 +77,10 @@ html, body
 }
 
 #cat
-{
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-}
+{height: 100px;}
 
 #catText
 {
-    position: absolute;
     background-color: darkslategray;
     padding: 1.5rem;
     font-size: 2rem;
@@ -98,22 +92,136 @@ html, body
 }
 
 #cat:hover ~ #catText
-{
-    display: block;
-}
+{display: block;}
 
 #house
 {
-    position: absolute;
-    bottom: 10px;
     height: 800px;
     left: 7300px;
 }
 
+#batContainer
+{
+    left: 0px;
+    top: 50px;
+    width:100px;
+    height: 100px;
+    z-index: 20;
+}
+
+.bat
+{height: 100px;}
+
+.bat1
+{
+    left: 750px;
+    animation: batMove1 5s infinite ease-in-out alternate;
+}
+
+@keyframes batMove1
+{
+    0%{top: 20px;}
+    100%{top: 150px;}
+}
+
+.bat2
+{
+    left: 1500px;
+    animation: batMove2 5s infinite ease-in-out alternate;
+}
+
+@keyframes batMove2
+{
+    0%{top: 20px;}
+    100%{top: 150px;}
+}
+
+.bat3
+{
+    left: 2250px;
+    animation: batMove3 5s infinite ease-in-out alternate;
+}
+
+@keyframes batMove3
+{
+    0%{top: 20px;}
+    100%{top: 150px;}
+}
+
+.bat4
+{
+    left: 3000px;
+    animation: batMove4 5s infinite ease-in-out alternate;
+}
+
+@keyframes batMove4
+{
+    0%{top: 20px;}
+    100%{top: 150px;}
+}
+
+.bat5
+{
+    left: 3750px;
+    animation: batMove5 5s infinite ease-in-out alternate;
+}
+
+@keyframes batMove5
+{
+    0%{top: 20px;}
+    100%{top: 150px;}
+}
+
+.bat6
+{
+    left: 4500px;
+    animation: batMove6 5s infinite ease-in-out alternate;
+}
+
+@keyframes batMove6
+{
+    0%{top: 20px;}
+    100%{top: 150px;}
+}
+
+.bat7
+{
+    left: 5250px;
+    animation: batMove7 5s infinite ease-in-out alternate;
+}
+
+@keyframes batMove7
+{
+    0%{top: 20px;}
+    100%{top: 150px;}
+}
+
+.bat8
+{
+    left: 6000px;
+    animation: batMove8 5s infinite ease-in-out alternate;
+}
+
+@keyframes batMove8
+{
+    0%{top: 20px;}
+    100%{top: 150px;}
+}
+
+.bat9
+{
+    left: 6750px;
+    animation: batMove9 5s infinite ease-in-out alternate;
+}
+
+@keyframes batMove9
+{
+    0%{top: 20px;}
+    100%{top: 150px;}
+}
+
 .lampFront
 {
-    position: absolute;
-    bottom: 0px;
     height: 150px;
     z-index: 50;
 }
@@ -195,7 +303,6 @@ html, body
 
 .lampBack
 {
-    position: absolute;
     bottom: 40px;
     height: 130px;
     z-index: 25;
@@ -275,5 +382,3 @@ html, body
 {
     left: 6975px;
 }
-
-
