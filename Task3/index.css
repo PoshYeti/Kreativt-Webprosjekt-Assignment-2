@@ -20,7 +20,7 @@ html, body
 #backgroundTint, #topText, #witch
 {position: fixed;}
 
-#ghostContainer, #ghost, #catContainer, #cat, #catText, #batContainer, #house, .bat, .lampFront, .lampBack
+#ghostContainer, #ghost, #catContainer, #cat, #catText, #house, #batContainer, .bat, #ratContainer, .rat, .lampFront, .lampBack
 {position: absolute;}
 
 #backgroundTint
@@ -220,6 +220,98 @@ html, body
     100%{top: 150px;}
 }
 
+#ratContainer
+{
+    left: 0px;
+    bottom: -30px;
+    width:100px;
+    height: 100px;
+}
+
+.rat
+{
+    height: 75px; 
+    left: -175px;
+}
+
+.rat1
+{
+    z-index: 20;
+    animation: ratMove1 15s infinite linear;
+    animation-delay: 1s;
+}
+
+@keyframes ratMove1
+{
+    0%{left: -150px;}
+    100%{left: 8000px;}
+}
+
+.rat2
+{
+    z-index: 20;
+    animation: ratMove2 15s infinite linear;
+    animation-delay: 1.5s;
+}
+
+@keyframes ratMove2
+{
+    0%{left: -150px;}
+    100%{left: 8000px;}
+}
+
+.rat3
+{
+    z-index: 20;
+    animation: ratMove3 15s infinite linear;
+    animation-delay: 2s;
+}
+
+@keyframes ratMove3
+{
+    0%{left: -150px;}
+    100%{left: 8000px;}
+}
+
+.rat4
+{
+    z-index: 20;
+    animation: ratMove4 15s infinite linear;
+    animation-delay: 2.5s;
+}
+
+@keyframes ratMove4
+{
+    0%{left: -150px;}
+    100%{left: 8000px;}
+}
+
+.rat5
+{
+    z-index: 20;
+    animation: ratMove5 15s infinite linear;
+    animation-delay: 3s;
+}
+
+@keyframes ratMove5
+{
+    0%{left: -150px;}
+    100%{left: 8000px;}
+}
+
+.rat6
+{
+    z-index: 20;
+    animation: ratMove6 15s infinite linear;
+    animation-delay: 3.5s;
+}
+
+@keyframes ratMove6
+{
+    0%{left: -150px;}
+    100%{left: 8000px;}
+}
+
 .lampFront
 {
     height: 150px;
@@ -227,158 +319,98 @@ html, body
 }
 
 .lampFront_1
-{
-    left: 50px;
-}
+{left: 50px;}
 
 .lampFront_2
-{
-    left: 500px;
-}
+{left: 500px;}
 
 .lampFront_3
-{
-    left: 1000px;
-}
+{left: 1000px;}
 
 .lampFront_4
-{
-    left: 1500px;
-}
+{left: 1500px;}
 
 .lampFront_5
-{
-    left: 2000px;
-}
+{left: 2000px;}
 
 .lampFront_6
-{
-    left: 2500px;
-}
+{left: 2500px;}
 
 .lampFront_7
-{
-    left: 3000px;
-}
+{left: 3000px;}
 
 .lampFront_8
-{
-    left: 3500px;
-}
+{left: 3500px;}
 
 .lampFront_9
-{
-    left: 4000px;
-}
+{left: 4000px;}
 
 .lampFront_10
-{
-    left: 4500px;
-}
+{left: 4500px;}
 
 .lampFront_11
-{
-    left: 5000px;
-}
+{left: 5000px;}
 
 .lampFront_12
-{
-    left: 5500px;
-}
+{left: 5500px;}
 
 .lampFront_13
-{
-    left: 6000px;
-}
+{left: 6000px;}
 
 .lampFront_14
-{
-    left: 6500px;
-}
+{left: 6500px;}
 
 .lampFront_15
-{
-    left: 7000px;
-}
+{left: 7000px;}
 
 .lampBack
 {
     bottom: 40px;
     height: 130px;
-    z-index: 25;
+    z-index: 15;
 }
 
 .lampBack_1
-{
-    left: 25px;
-}
+{left: 25px;}
 
 .lampBack_2
-{
-    left: 475px;
-}
+{left: 475px;}
 
 .lampBack_3
-{
-    left: 975px;
-}
+{left: 975px;}
 
 .lampBack_4
-{
-    left: 1475px;
-}
+{left: 1475px;}
 
 .lampBack_5
-{
-    left: 1975px;
-}
+{left: 1975px;}
 
 .lampBack_6
-{
-    left: 2475px;
-}
+{left: 2475px;}
 
 .lampBack_7
-{
-    left: 2975px;
-}
+{left: 2975px;}
 
 .lampBack_8
-{
-    left: 3475px;
-}
+{left: 3475px;}
 
 .lampBack_9
-{
-    left: 3975px;
-}
+{left: 3975px;}
 
 .lampBack_10
-{
-    left: 4475px;
-}
+{left: 4475px;}
 
 .lampBack_11
-{
-    left: 4975px;
-}
+{left: 4975px;}
 
 .lampBack_12
-{
-    left: 5475px;
-}
+{left: 5475px;}
 
 .lampBack_13
-{
-    left: 5975px;
-}
+{left: 5975px;}
 
 .lampBack_14
-{
-    left: 6475px;
-}
+{left: 6475px;}
 
 .lampBack_15
-{
-    left: 6975px;
-}
+{left: 6975px;}
